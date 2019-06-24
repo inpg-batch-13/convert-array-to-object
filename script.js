@@ -1,5 +1,18 @@
 function convert (data) {
   // Your code here
+
+  var result = []
+  for (var i = 0; i<data.length; i++){
+    var biodata = {
+      id: data[i][0],
+      firstName: data[i][1],
+      lastName: data[i][2],
+      email: data[i][3]
+    }
+    result.push(biodata)
+  }
+
+  return result
 }
 
 // TEST CASES
