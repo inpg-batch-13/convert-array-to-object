@@ -1,5 +1,13 @@
 function convert (data) {
-  // Your code here
+var hasil = []
+
+for (var i = 0 ; i < data.length ; i++){
+ hasil.push(data[i][0] = {id: data[i][0],
+  firstName: data[i][1],
+lastName: data[i][2],
+email: data[i][3]})
+}
+return hasil
 }
 
 // TEST CASES
