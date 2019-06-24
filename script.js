@@ -1,18 +1,36 @@
 function convert (data) {
   // Your code here
+// #1
+//using for:
+  // var result = []
+  // for (var i = 0; i<data.length; i++){
+  //   var biodata = {
+  //     id: data[i][0],
+  //     firstName: data[i][1],
+  //     lastName: data[i][2],
+  //     email: data[i][3]
+  //   }
+  //   result.push(biodata)
+  // }
 
-  var result = []
-  for (var i = 0; i<data.length; i++){
+  // return result
+
+  //#2
+  //using .map();
+  return data.map( function (x){
+    var result = []
     var biodata = {
-      id: data[i][0],
-      firstName: data[i][1],
-      lastName: data[i][2],
-      email: data[i][3]
-    }
-    result.push(biodata)
+      id: x[0],
+      firstName: x[1],
+      lastName: x[2],
+      email: x[3]
   }
 
-  return result
+return biodata
+  
+    }
+  )
+
 }
 
 // TEST CASES
